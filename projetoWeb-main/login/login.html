@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Alpha Esportes</title>
+
+    <link rel="stylesheet" type="text/css" href="src/estilos/login.css" media="screen" />
+    <link rel="shortcut icon" href="assets/logo_icon.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../menu/menu.css">
+</head>
+<body>
+
+    <header>
+
+        <div class="menu">
+            <div class="hamburguer">
+                <hr>
+                <hr>
+                <hr>
+            </div>
+            <img src="../menu/assets/logo.png" alt="">
+            <div class="void">
+            </div>
+        </div>
+
+        <div class="menu-open">
+            <ul>
+                <li><a href="../pagina-inicial/index.php">Início</a></li>
+                <li><a href="../loja/loja.php">Loja</a></li>
+                <li><a href="../sobre-nos/sobre-nos.html">Sobre nós</a></li>
+                <li><a href="../fale_conosco/fale_conosco.html">Fale conosco</a></li>
+                <li><a href="./login_php/cliente.php">Minha conta</a></li>
+            </ul>
+        </div>
+
+    </header>
+
+    <main>
+        <div id="login">
+            <h1>NOME EMPRESA</h1>
+            <form action="login_php/verificar_login.php" method="post">
+                <div class="logsen">
+                    <label for="email">endereço de email:</label>
+                    <input type="email" name="email" id="email" autocomplete="email" placeholder="lorem@gmail.com">
+                </div>
+                <div class="logsen">
+                    <label for="senha">Senha:</label>
+                    <input type="password" name="senha" id="senha" autocomplete="current-password" placeholder="password">
+                </div>
+        
+                <button type="submit" id="submit-button">ENTRAR</button>
+                <a href="#">Esqueci a senha.</a>
+                <br>
+                <p>Não tem cadastro? <a href="registro.html"> Registre-se!</a></p>
+            </form>
+        </div>
+    </main>
+
+    <script src="../menu/menu.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,520 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+    color: #000;
+}
+
+.row {
+    width: 100%;
+}
+
+/* Estilo menu */
+body {
+    background-color: #ccfe06;
+}
+
+main {
+    width: 100%;
+    background-color: #151515;
+}
+
+/*Estilo Capa*/
+
+.capa {
+    background-color: #151515;
+    text-transform: uppercase;
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.capa-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    text-align: center;
+}
+
+.capa-conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.capa-conteudo a {
+    width: 230px;
+    padding: 10px;
+    background:#ccfe06;
+    color: #000;
+    border: 0;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+h1,h2 {
+    font-weight: 400;
+    color: white;
+}
+
+/* Categorias de produtos*/
+
+.categorias {
+    background-color: #fff;
+    padding: 10px;
+}
+
+.categoria {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.categoria img {
+    width: 120px;
+    height: 120px;
+    background-color: #ccfe06;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.categoria > span {
+    color: #000;
+}
+
+/* Categorias de produtos mobile*/
+
+.categorias-mobile {
+    display: none;
+}
+
+.proximo,.anterior {
+    background-color: #151515;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    opacity: 1;
+}
+
+/* Estilo Novidades */
+
+.novidades {
+    background-color: #ccfe06;
+}
+
+.novidades > .titulo-sessao {
+    color: #151515;
+}
+
+.container-novidades {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.card-novidades {
+    background-color: #151515;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 30px;
+    padding: 25px;
+    margin: 10px;
+    -webkit-box-shadow: 10px 10px 0px 0px rgba(255,255,255,1);
+-moz-box-shadow: 10px 10px 0px 0px rgba(255,255,255,1);
+box-shadow: 10px 10px 0px 0px rgba(255,255,255,1);
+}
+
+.card-novidades span {
+    color: #fff;
+    width: 100%;
+}
+
+.card-novidades img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.novidades .produto {
+    flex-grow: 1;
+}
+
+.novidades .marca {
+    font-weight: bold;
+}
+
+.novidades .ver-produto {
+    background-color: #ccfe06;
+    color: #151515;
+    border: 0;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+#carouselNovidades2 {
+    display: none;
+}
+
+/* Estilo Esportes */
+
+.icon-esporte {
+    width: 70px;
+    height: 70px;
+}
+
+.sessao {
+    padding: 50px;
+}
+
+.titulo-sessao {
+    font-size: 3rem;
+    margin-bottom: 100px;
+}
+
+.esporte {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.esporte span {
+    color: #ccfe06;
+    font-weight: bold;
+}
+
+.esporte p {
+    color: white;
+    flex-grow: 1;
+    text-align: justify;
+}
+
+.esporte a {
+    background-color: #ccfe06;
+    color: #151515;
+    font-weight: bold;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/*Estilo Ofertas*/
+
+.ofertas {
+    background-color: #fff;
+}
+
+.content-ofertas {
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 20px;
+}
+
+.content-ofertas h1, .content-ofertas p,.link-ofertas {
+    width: 70%;
+}
+
+.content-ofertas p {
+    font-size: 22px;
+}
+
+.link-ofertas {
+    text-align: left;
+}
+
+.content-ofertas a {
+    text-decoration: none;
+    background-color: #151515;
+    color: #fff;
+    font-weight: bold;
+    padding: 20px 55px;
+}
+
+.titulo-ofertas {
+    text-align: left;
+    color: #151515;
+    margin: 0;
+}
+
+/* Estilo Depoimentos */
+
+.cliente {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cliente p {
+    color: #fff;
+}
+
+.cliente .avaliacao {
+    width: 50%;
+}
+
+/* Estilo rodapé */
+
+footer {
+    background-color: #ccfe06;
+}
+
+.logo_rodape {
+    padding-bottom: 100px;
+}
+
+.dados {
+    padding: 10px;
+}
+
+.dados a {
+    text-decoration: none;
+    margin: 10px;
+}
+
+.dados,.informacao h3 {
+    width: 80%;
+}
+
+.informacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+@media screen and (max-width:1470px) {
+
+    h1 {
+        font-size: 2.1rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    .sessao {
+        padding: 30px;
+    }
+
+    .content-ofertas h1, .content-ofertas p,.link-ofertas {
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width:1300px) {
+
+    .container-novidades {
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width:1190px) {
+    
+    .capa {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    .sessao {
+        padding: 20px;
+    }
+
+    .content-ofertas h1, .content-ofertas p,.link-ofertas {
+        width: 100%;
+    }
+
+    .img-ofertas img {
+        max-width: 100%;
+    }
+
+    .container-novidades {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:1055px) {
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+}
+
+@media screen and (max-width:992px) {
+
+    .capa {
+        padding: 30px;
+    }
+
+    .capa-conteudo {
+        margin: 0 auto;
+        align-items: center;
+        text-align: center;
+    }
+
+    .capa-img {
+        padding: 30px;
+        width: 100%;
+    }
+
+    .capa-img img {
+        width: 75%;
+    }
+
+    .categorias-content {
+        width: 100%;
+    }
+
+    .categorias {
+        padding: 0px;
+    }
+
+    .esporte {
+        padding: 20px;
+        gap: 10px;
+    }
+
+    .titulo-sessao {
+        margin-bottom: 40px;
+    }
+
+    .img-ofertas {
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width:880px) {
+
+    .categoria img {
+        width: 90px;
+        height: 90px;
+    }
+
+    #carouselNovidades2 {
+        display: block;
+    }
+
+    #carouselNovidades {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:700px) {
+
+    .categorias-mobile {
+        display: block;
+    }
+
+    .categorias-desktop {
+        display: none;
+    }
+
+    .categorias-content {
+        display: flex;
+        justify-content: space-around;
+        padding: 10px 30px 10px 30px;
+    }
+
+    .img-ofertas img {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:510px) {
+    
+    .categoria img {
+        width: 76px;
+        height: 75px;
+    }
+
+    .categoria {
+        font-size: 16px;
+    }
+
+    .content-ofertas {
+        padding: 30px;
+    }
+
+}
+
+@media screen and (max-width:450px) {
+
+    h1{
+        font-size: 1.4rem;
+    }
+
+    h2 {
+        font-size: 0.9rem;
+    }
+
+    header img {
+        width: 160px;
+    }
+
+
+    .hamburguer {
+        width: 40px;
+        height: 30px;
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    hr {
+        width: 100%;
+        margin: 0;
+        border-radius: 5px;
+        opacity: 1;
+    }
+
+    .titulo-sessao {
+        font-size: 2.2rem;
+    }
+
+    .content-ofertas {
+        padding: 10px;
+    }
+
+    .link-ofertas a {
+        padding: 20px;
+    }
+
+    .img-ofertas {
+        margin-top: 30px;
+    }
+
+    .card-novidades {
+        padding: 15px;
+    }
+
+}

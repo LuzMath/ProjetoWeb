@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+    --dark1:  #151515;
+    --dark2:  #2d383c; 
+    --dark3:  #414c50;
+    --azul1:  #0784b5;
+    --azul2:  #39ace7;
+    --branco: #ffffff;
+    --amarelo: #ccfe06;
+    --amarelo2: #9dbb24;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "montserrat", sans-serif;
+}
+
+body {
+    background-color: var(--dark1);
+    color: var(--branco);
+    background-color: var(--amarelo);
+}
+
+main {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--dark1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#login {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 400;
+    text-align: center;
+    
+}
+
+#login p, a {
+    font-size: 14px;
+}
+
+#login h1 {
+    font-size: 42px;
+    padding-bottom: 60px;
+    font-weight: 600;
+}
+
+.logsen {
+    display: flex;
+    flex-direction: column;
+    margin: 1.2%;
+    font-size: 16px;
+    font-weight: 700;
+    width: 50%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+#login button {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 8px;
+    margin-top: 18px;
+    color: var(--dark1);
+    background-color: var(--amarelo);
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#login button:hover{
+    background-color: var(--amarelo2);
+}
+
+input {  
+    padding: 15px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: none;
+}
+
+label {
+    padding-bottom: 10px;
+}
+
+a {
+    color: var(--branco);
+}
+
+@media only screen and (max-width: 600px) {
+    form {
+      width: 100%;
+    }
+  }
